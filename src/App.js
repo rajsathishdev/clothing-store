@@ -1,12 +1,16 @@
 import React from 'react';
+import { Switch, Link, Route } from 'react-router-dom';
 
 import './App.css';
+
 import HomePage from './pages/home/homepage.component';
 
 function App() {
   return (
     <div className="container">
-      <HomePage/>
+       <Switch>
+          
+       </Switch>
     </div>
   );
 }
