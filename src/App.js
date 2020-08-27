@@ -4,6 +4,7 @@ import { Switch, Link, Route,BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 
 import HomePage from './pages/home/homepage.component';
+import ShopPage from './pages/shop/shoppage.component';
 
 const HomePage2 = (props) => {
   console.log(props);
@@ -43,8 +44,8 @@ function App() {
       <Router>
         <Switch>
       <Route exact path="/" component={HomePage} />
-       <Route exact  path="/shop/hats" component={TopicList} />
-       <Route path="/topics/:topicId" component={TopicDetail} /></Switch> 
+      <Route exact path="/shop" component={ShopPage} />
+      </Switch> 
       </Router>
        
     </div>
