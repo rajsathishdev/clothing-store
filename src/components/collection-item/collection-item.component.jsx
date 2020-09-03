@@ -4,13 +4,13 @@ import './collection-item.styles.scss';
 
 const CollectionItem = ({imageUrl, price, name}) => {
     return (
-        <div class="collection-item">
-            <div class="image" style={{backgroundImage: `url(${imageUrl})`}}>
+        <div className="collection-item">
+            <div className="image" style={{backgroundImage: `url(${imageUrl})`}}>
 
             </div>
-            <div class="collection-footer">
-                <div class="name">{name }</div>
-                <div class="price">{price}</div>
+            <div className="collection-footer">
+                <div className="name">{name }</div>
+                <div className="price">{price}</div>
             </div>
         </div>
     );

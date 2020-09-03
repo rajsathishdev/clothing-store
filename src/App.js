@@ -3,8 +3,10 @@ import { Switch, Link, Route,BrowserRouter as Router } from 'react-router-dom';
 
 import './App.css';
 
+import Header from './components/header/header.component';
 import HomePage from './pages/home/homepage.component';
 import ShopPage from './pages/shop/shoppage.component';
+import SigninSignup from './pages/signin-singup/signin-signup.component';
 
 const HomePage2 = (props) => {
   console.log(props);
@@ -41,10 +43,13 @@ const TopicDetail = (props) => {
 function App() {
   return (
     <div className="container">
+      
       <Router>
+      <Header />
         <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route exact path="/shop" component={ShopPage} />
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/shop" component={ShopPage} />
+          <Route exact path="/signin" component={SigninSignup} />
       </Switch> 
       </Router>
        
